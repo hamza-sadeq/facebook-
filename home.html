@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="home.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav data-aos="fade-up" data-duration="3000">
+    <div class="nav-left">
+      <a href="#"><img src="images/icons8-facebook-48.png"></a>
+      <i id="search" class="fa-solid fa-magnifying-glass"></i>
+      <input type="text"placeholder= "Search Facebook" onclick="none()" id="search-input">
+    </div>
+    <div class="nav-center">
+      <a href="#"><i style="background-color: #24272b;" class="fa-solid fa-house"></i></a>
+      <a href="#"><i style="background-color: #24272b;" class="fa-solid fa-tv"></i></a>
+      <a href="#"><i style="background-color: #24272b;" class="fa-sharp fa-solid fa-store"></i></a>
+      <a href="#"><i style="background-color: #24272b;" class="fa-solid fa-people-group"></i></a>
+      <a href="#"><i style="background-color: #24272b;" class="fa-solid fa-puzzle-piece"></i></a>
+    </div>
+    <div class="nav-right">
+      <a href="#"><i style="background-color: #4248507a;" class="fa-solid fa-braille"></i></a>
+      <a href="#"><i style="background-color: #4248507a;" class="fa-brands fa-facebook-messenger"></i></a>
+      <a href="#"><i style="background-color: #4248507a;" class="fa-solid fa-bell"></i></a>
+      <img src="images/hamza.jpg">
+    </div>
+  </nav>
+  <div style="display: flex; justify-content: space-between;"> 
+  <aside data-aos="fade-right" data-duration="3000">
+    <div class="left-side">
+      <div class="profile">
+      <img src="images/hamza.jpg" class="me">
+      <a href="#">Hamza Sadek</a>
+    </div>
+    <div class="profile">
+      <img src="images/friends.png">
+      <a href="#">Friends</a>
+    </div>
+    <div class="profile">
+      <img src="images/most recent.png">
+      <a href="#">Most Recent</a>
+    </div>
+    <div class="profile">
+      <img src="images/Group.png">
+      <a href="#">Groups</a>
+    </div>
+    <div class="profile">
+      <img src="images/Market.png">
+      <a href="#">Market Place</a>
+    </div>
+    <div class="profile">
+      <img src="images/Watch.png">
+      <a href="#">Watch</a>
+    </div>
+    <div class="profile"  id="appear" onclick="appear()" style="transition: 0.2s ease;">
+      <a href="#" id="arrow"><i class="fa-solid fa-angle-down"></i></a>
+      <a href="#">See More</a>
+    </div>
+    <div id="more">
+    <div class="profile">
+      <img src="images/Ad Center.png">
+      <a href="#">Ad Center</a>
+    </div>
+    <div class="profile">
+      <img src="images/Ads Manager.png">
+      <a href="#">Ads Manager</a>
+    </div>
+    <div class="profile">
+      <img src="images/Blood Donations.png">
+      <a href="#">Blood Donations</a>
+    </div>
+    <div class="profile">
+      <img src="images/unknown earth.png">
+      <a href="#">Climate Science Center</a>
+    </div>
+    <div class="profile">
+      <img src="images/Covid-19.png">
+      <a href="#">Covid-19 information center</a>
+    </div>
+    <div class="profile">
+      <img src="images/Emotional Health.png">
+      <a href="#">Emotional Health</a>
+    </div>
+    <div class="profile">
+    <img src="images/Events.png">
+    <a href="#">Events</a>
+  </div>
+  <div class="profile">
+    <img src="images/Facebook pay.png">
+    <a href="#">Facebook Pay</a>
+  </div>
+  <div class="profile">
+    <img src="images/Favourites.png">
+    <a href="#">Favourites</a>
+  </div>
+  <div class="profile">
+    <img src="images/Fundraisers.png">
+    <a href="#">Fundraisers</a>
+  </div>
+  <div class="profile">
+    <img src="images/gaming video.png">
+    <a href="#">Gaming video</a>
+  </div>
+  <div class="profile">
+    <img src="images/Live.png">
+    <a href="#">Live Videos</a>
+  </div>
+  <div class="profile">
+    <img src="images/Memories.png">
+    <a href="#">Memories</a>
+  </div>
+  <div class="profile">
+    <img src="images/NORMAL messenger.png">
+    <a href="#">Messenger</a>
+  </div>
+  <div class="profile">
+    <img src="images/Green messenger.png">
+    <a href="#">Messenger Kids</a>
+  </div>
+  <div class="profile">
+    <img src="images/pages.png">
+    <a href="#">Pages</a>
+  </div>
+  <div class="profile" onclick="less()">
+    <a href="#" id="arrow"><i class="fa-solid fa-angle-up"></i></a>
+    <a href="#">See Less</a>
+  </div>
+</div>
+    <hr>
+    <div class="left-side-bottom">
+      <div class="head">
+      <p>Your Shortcuts</p>
+    </div>
+    <div class="profile">
+      <img src="images/exames.jpg" style="border-radius: 2px;">
+      <a href="#">زنقة الإمتحانات</a>
+    </div>
+    <div class="profile">
+      <img src="images/118516996_101978131644467_3988878384996070635_n.jpg" style="border-radius: 2px;">
+      <a href="#">Coders society</a>
+    </div>
+    <div class="profile">
+      <img src="images/web devlopers.png" style="border-radius: 2px;">
+      <a href="#">web Development</a>
+    </div>
+    <div class="profile">
+      <img src="images/8 bal pool.png" style="border-radius: 2px;">
+      <a href="#">8 ball pool</a>
+    </div>
+    <div class="profile">
+      <img src="images/chess.jpg" style="border-radius: 2px;">
+      <a href="#">Chess</a>
+    </div>
+    <p style="color: #444950; font-size: 12px; width: 200px; font-weight: 600; margin: 0; margin-left: 10px;" >Privacy·Terms·Advertising·Ad Choices· Cookies · Meta © 2022</p>
+    </div>
+    </div>
+  </aside>
+  <main style="margin: auto; display: flex; flex-direction: column;">
+  <header data-aos="flip-left" data-duration="3000">
+      <div class="top" style="display: flex; align-items:center;">
+        <img src="images/hamza.jpg">
+        <form style="background-color: #24272b;">
+        <input type="text" placeholder="Whats on your mind ,Hamza?" id="input" style="width: 270px; margin: 0;">
+        <input type="submit" value="Post" id="Post">
+        </form>
+      </div>
+      <hr>
+      <div style="display: flex; justify-content: space-around; background-color: #24272b; ">
+      <div class="live-video" style="display: flex; align-items: center;">
+        <a href="#"><i style="background-color:#24272b;"class="fa-solid fa-video"></i></a>
+        <p>Live video</p>
+      </div>
+      <div class="live-video" style="display: flex; align-items: center;">
+        <a href="#"><i style="color: green; background-color:#24272b;" class="fa-regular fa-images"></i></a>
+        <p>Photo/Video</p>
+      </div>
+      <div class="live-video" style="display: flex; align-items: center;">
+        <a href="#"><i style="background-color:#24272b; color: orange;" class="fa-regular fa-face-smile"></i></a>
+        <p>Feeling/activity</p>
+      </div>
+    </div>
+  </header>
+    <section data-aos="fade-up" data-duration="3000">
+      <div class="head-post">
+        <div style="background-color: #24272b;">
+          <img src="images/hamza.jpg">
+          <a style="color: white;">Hamza sadek</a>
+          <br>
+          <a style="font-size: 10px; color: #444950; position: relative; top: -20px; left: 35px;">3 days ago</a>
+        </div>
+        <div style="background-color: #24272b; color: #444950;">
+          <a style="font-size: 20px; font-weight: 600; cursor: pointer;">&#10005;</a>
+        </div>
+      </div>
+      <p style="background-color: #24272b; padding-left:5px; margin: 0; margin-bottom: 10px; color:white; font-size:13px; font-weight: 500;">I LOVE PROGRAMMING </p>
+      <img src="images/pexels-flo-dahm-699459.jpg" style="width: 100%; height:400px;">
+      <div style="padding-top: 10px; background-color: #24272b;">
+        <div style="background-color: #24272b;display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
+          <img src="images/love.svg" style="height: 18px; background-color: #24272b; margin: 0;">
+          <img src="images/like.svg" id="like-svg" style="height: 18px; background-color: #24272b; margin: 0; display: none; position: relative; left: -1.7rem;">
+          <a id="moh" style="color: gray; font-size: 10px; position: relative; left: -2.5rem;">Mohamed and 3 others reacted on the post</a>
+          <div style="background-color: #24272b;">
+            <a style="color: gray; font-size: 10px;">2 Comments</a>
+          </div>
+        </div>
+      </div>
+      <hr style="margin: 0; margin:auto; width:90%; border-color: gray;" >
+      <div class="reactions">
+      <div class="like" id="like" onclick="like()">
+        <a><i class="fa-regular fa-thumbs-up"></i></a>
+        <a>Like</a>
+      </div>
+      <div class="like">
+        <a><i class="fa-regular fa-comment"></i></a>
+        <a>Comment</a>
+      </div>
+      <div class="like">
+        <a><i class="fa-solid fa-share"></i></a>
+        <a>Share</a>
+      </div>
+    </div>
+    <hr style="margin-top: 5px; margin:auto; width:90%; border-color: gray;">
+    <div class="comments">
+      <div style="background-color: #24272b;">
+      <img src="images/hamza.jpg">
+    </div>
+      <div class="comment">
+        <a style="color: white;">Mohamed</a>
+        <p>Congratulations</p>
+      </div>
+    </div>
+    <div style="background-color: #24272b; padding: 0; margin: 0; padding-left: 55px;">
+      <a onclick="turn()" id="comment-like" style="color: gray; font-size: 10px; padding: 0; margin: 0; transition: 0.2s ease; cursor: pointer;">like</a>
+      <a style="color: gray; font-size: 10px; padding: 0; margin: 0;">reply</a>
+      <a style="color: gray; font-size: 10px; padding: 0; margin: 0;">5 hours ago</a>
+    </div>
+    <div style="background-color: #24272b; display: flex; padding-top: 10px;">
+      <div style="background-color: #24272b;">
+      <img src="images/hamza.jpg" style="  width: 20px; border-radius: 10px; margin-left: 20px;">
+    </div>
+      <form style="background-color: #24272b;"><input id="input" type="text" placeholder="Write a comment ..."></form>
+  </div>
+  </section>
+  <section data-aos="zoom-in" data-duration="3000">
+    <div class="head-post">
+      <div style="background-color: #24272b;">
+        <img src="images/hamza.jpg">
+        <a style="color: white;">Hamza sadek</a>
+        <br>
+        <a style="font-size: 10px; color: #444950; position: relative; top: -20px; left: 35px;">3 days ago</a>
+      </div>
+      <div style="background-color: #24272b; color: #444950;">
+        <a style="font-size: 20px; font-weight: 600; cursor: pointer;">&#10005;</a>
+      </div>
+    </div>
+    <p style="background-color: #24272b; padding-left:5px; margin: 0; margin-bottom: 10px; color:white; font-size:13px; font-weight: 500;">I LOVE PROGRAMMING </p>
+    <img src="images/pexels-djordje-petrovic-2102416.jpg" style="width: 100%; height:400px;">
+    <div style="padding-top: 10px; background-color: #24272b;">
+      <div style="background-color: #24272b;display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
+        <img src="images/love.svg" style="height: 18px; background-color: #24272b; margin: 0;">
+        <img src="images/like.svg" id="like1-svg" style="height: 18px; background-color: #24272b; margin: 0; display: none; position: relative; left: -1.7rem;">
+        <a id="moh1" style="color: gray; font-size: 10px; position: relative; left: -2.5rem;">Mohamed and 3 others reacted on the post</a>
+        <div style="background-color: #24272b;">
+          <a style="color: gray; font-size: 10px;">2 Comments</a>
+        </div>
+      </div>
+    </div>
+    <hr style="margin: 0; margin:auto; width:90%; border-color: gray;" id="hr1">
+    <div class="reactions">
+    <div class="like" id="like1" onclick="like1()">
+      <a><i class="fa-regular fa-thumbs-up"></i></a>
+      <a>Like</a>
+    </div>
+    <div class="like">
+      <a><i class="fa-regular fa-comment"></i></a>
+      <a>Comment</a>
+    </div>
+    <div class="like">
+      <a><i class="fa-solid fa-share"></i></a>
+      <a>Share</a>
+    </div>
+  </div>
+  <hr style="margin-top: 5px; margin: 0; margin:auto; width:90%; border-color: gray;">
+  <div class="comments">
+    <div style="background-color: #24272b;">
+    <img src="images/hamza.jpg">
+  </div>
+    <div class="comment">
+      <a style="color: white;">Mohamed</a>
+      <p>Congratulations</p>
+    </div>
+  </div>
+  <div style="background-color: #24272b; padding: 0; margin: 0; padding-left: 55px;">
+    <a onclick="turn()" id="comment-like" style="color: gray; font-size: 10px; padding: 0; margin: 0; transition: 0.2s ease; cursor: pointer;">like</a>
+    <a style="color: gray; font-size: 10px; padding: 0; margin: 0;">reply</a>
+    <a style="color: gray; font-size: 10px; padding: 0; margin: 0;">5 hours ago</a>
+  </div>
+  <div style="background-color: #24272b; display: flex; padding-top: 10px;">
+    <div style="background-color: #24272b;">
+    <img src="images/hamza.jpg" style="  width: 20px; border-radius: 10px; margin-left: 20px;">
+  </div>
+    <form style="background-color: #24272b;"><input id="input" type="text" placeholder="Write a comment ..."></form>
+</div>
+</section>
+<section   data-aos="zoom-in-left" data-duration="3000">
+  <div class="head-post">
+    <div style="background-color: #24272b;">
+      <img src="images/hamza.jpg">
+      <a style="color: white;">Hamza sadek</a>
+      <br>
+      <a style="font-size: 10px; color: #444950; position: relative; top: -20px; left: 35px;">3 days ago</a>
+    </div>
+    <div style="background-color: #24272b; color: #444950;">
+      <a style="font-size: 20px; font-weight: 600; cursor: pointer;">&#10005;</a>
+    </div>
+  </div>
+  <p style="background-color: #24272b; padding-left:5px; margin: 0; margin-bottom: 10px; color:white; font-size:13px; font-weight: 500;">I LOVE PROGRAMMING </p>
+  <img src="images/pexels-ravi-kant-1927595.jpg" style="width: 100%; height:400px;">
+  <div style="padding-top: 10px; background-color: #24272b;">
+    <div style="background-color: #24272b;display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
+      <img src="images/love.svg" style="height: 18px; background-color: #24272b; margin: 0;">
+      <img src="images/like.svg" id="like2-svg" style="height: 18px; background-color: #24272b; margin: 0; display: none; position: relative; left: -1.7rem;">
+      <a id="moh2" style="color: gray; font-size: 10px; position: relative; left: -2.5rem;">Mohamed and 3 others reacted on the post</a>
+      <div style="background-color: #24272b;">
+        <a style="color: gray; font-size: 10px;">2 Comments</a>
+      </div>
+    </div>
+  </div>
+  <hr style="margin: 0; margin:auto; width:90%; border-color: gray;" id="hr">
+  <div class="reactions">
+  <div class="like" id="like2" onclick="like2()">
+    <a><i class="fa-regular fa-thumbs-up"></i></a>
+    <a>Like</a>
+  </div>
+  <div class="like">
+    <a><i class="fa-regular fa-comment"></i></a>
+    <a>Comment</a>
+  </div>
+  <div class="like">
+    <a><i class="fa-solid fa-share"></i></a>
+    <a>Share</a>
+  </div>
+</div>
+<hr style="margin-top: 5px; margin: 0; margin:auto; width:90%; border-color: gray;">
+<div class="comments">
+  <div style="background-color: #24272b;">
+  <img src="images/hamza.jpg">
+</div>
+  <div class="comment">
+    <a style="color: white;">Mohamed</a>
+    <p>Congratulations</p>
+  </div>
+</div>
+<div style="background-color: #24272b; padding: 0; margin: 0; padding-left: 55px;">
+  <a onclick="turn()" id="comment-like" style="color: gray; font-size: 10px; padding: 0; margin: 0; transition: 0.2s ease; cursor: pointer;">like</a>
+  <a style="color: gray; font-size: 10px; padding: 0; margin: 0;">reply</a>
+  <a style="color: gray; font-size: 10px; padding: 0; margin: 0;">5 hours ago</a>
+</div>
+<div style="background-color: #24272b; display: flex; padding-top: 10px;">
+  <div style="background-color: #24272b;">
+  <img src="images/hamza.jpg" style="  width: 20px; border-radius: 10px; margin-left: 20px;">
+</div>
+  <form style="background-color: #24272b;"><input id="input" type="text" placeholder="Write a comment ..."></form>
+</div>
+</section>
+<section  data-aos="zoom-in-right" data-duration="3000" style="height: 560px;">
+  <div class="head-post">
+    <div style="background-color: #24272b;">
+      <img src="images/hamza.jpg">
+      <a style="color: white;">Hamza sadek</a>
+      <br>
+      <a style="font-size: 10px; color: #444950; position: relative; top: -20px; left: 35px;">3 days ago</a>
+    </div>
+    <div style="background-color: #24272b; color: #444950;">
+      <a style="font-size: 20px; font-weight: 600; cursor: pointer;">&#10005;</a>
+    </div>
+  </div>
+  <p style="color: white; background-color: #24272b; width: 90%; text-align: right;">عشان البرمجة مهمه واساس كل حاجه حوالينا وفرنالك مجموعة كتب "Notes for Professionals" وهي تعتبر من افضل الكتب في مجال البرمجة ومجالات تانية كتير لأنها مليانه معلومات و هي حصيلة خبرات و تعب المبرمجين 
+    الكتب بتتكلم عن مجالات كتير
+    - Front-end web development (HTML5, CSS, and JavaScript …etc.)
+    - Back-end web development (Python, PHP …etc.)
+    - Software development (Java, Python, C++ …etc.)
+    - App development (Java, Python, Kotlin …etc.)
+    - Database (SQL, MongoDB, MySQL …etc.) 
+    - Linux </p>
+  <div style="padding-top: 10px; background-color: #24272b;">
+    <div style="background-color: #24272b;display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
+      <img src="images/love.svg" style="height: 18px; background-color: #24272b; margin: 0;">
+      <img src="images/like.svg" id="like3-svg" style="height: 18px; background-color: #24272b; margin: 0; display: none; position: relative; left: -1.7rem;">
+      <a id="moh3" style="color: gray; font-size: 10px; position: relative; left: -2.5rem;">Mohamed and 3 others reacted on the post</a>
+      <div style="background-color: #24272b;">
+        <a style="color: gray; font-size: 10px;">2 Comments</a>
+      </div>
+    </div>
+  </div>
+  <hr style="margin: 0; margin:auto; width:90%; border-color: gray;" id="hr">
+  <div class="reactions">
+  <div class="like" id="like3" onclick="like3()">
+    <a><i class="fa-regular fa-thumbs-up"></i></a>
+    <a>Like</a>
+  </div>
+  <div class="like">
+    <a><i class="fa-regular fa-comment"></i></a>
+    <a>Comment</a>
+  </div>
+  <div class="like">
+    <a><i class="fa-solid fa-share"></i></a>
+    <a>Share</a>
+  </div>
+</div>
+<hr style="margin-top: 5px; margin: 0; margin:auto; width:90%; border-color: gray;">
+<div class="comments">
+  <div style="background-color: #24272b;">
+  <img src="images/hamza.jpg">
+</div>
+  <div class="comment">
+    <a style="color: white;">Mohamed</a>
+    <p>Congratulations</p>
+  </div>
+</div>
+<div style="background-color: #24272b; padding: 0; margin: 0; padding-left: 55px;">
+  <a onclick="turn()" id="comment-like" style="color: gray; font-size: 10px; padding: 0; margin: 0; transition: 0.2s ease; cursor: pointer;">like</a>
+  <a style="color: gray; font-size: 10px; padding: 0; margin: 0;">reply</a>
+  <a style="color: gray; font-size: 10px; padding: 0; margin: 0;">5 hours ago</a>
+</div>
+<div style="background-color: #24272b; display: flex; padding-top: 10px;">
+  <div style="background-color: #24272b;">
+  <img src="images/hamza.jpg" style="  width: 20px; border-radius: 10px; margin-left: 20px;">
+</div>
+  <form style="background-color: #24272b;"><input id="input" type="text" placeholder="Write a comment ..."></form>
+</div>
+</section>
+<summary  data-aos="zoom-in-up" data-duration="3000">
+  <div class="head-post">
+    <div class="div1">
+      <img src="images/hamza.jpg">
+      <a class="a1">Hamza sadek</a>
+      <br>
+      <a class="a2" style="  font-size: 10px;
+      color: #444950; 
+      position: relative; 
+      top: -20px; 
+      left: 35px;">3 days ago</a>
+    </div>
+    <div class="div2">
+      <a class="x" style="font-size: 20px; font-weight: 600;">&#10005;</a>
+    </div>
+  </div>
+  <p class="p1">الحمد لله</p>
+  <div class="div3">
+    <div class="div4">
+      <img src="images/love.svg" style="height: 18px; background-color: #24272b; margin: 0;">
+      <img src="images/like.svg" id="like4-svg" style="height: 18px; background-color: #24272b; margin: 0; display: none; position: relative; left: -1.7rem;">
+      <a id="moh4" style="color: gray; font-size: 10px; position: relative; left: -2.5rem;">Mohamed and 3 others reacted on the post</a>
+      <div style="background-color: #24272b;">
+        <a style="color: gray; font-size: 10px;">2 Comments</a>
+      </div>
+    </div>
+  </div>
+  <hr style=" margin: 0; margin:auto; width:90%; border-color: gray;" id="hr">
+  <div class="reactions">
+  <div class="like" id="like4" onclick="like4()">
+    <a><i class="fa-regular fa-thumbs-up"></i></a>
+    <a>Like</a>
+  </div>
+  <div class="like">
+    <a><i class="fa-regular fa-comment"></i></a>
+    <a>Comment</a>
+  </div>
+  <div class="like">
+    <a><i class="fa-solid fa-share"></i></a>
+    <a>Share</a>
+  </div>
+</div>
+<hr style="margin-top: 5px; margin: 0; margin:auto; width:90%; border-color: gray;">
+<div class="comments">
+  <div style="background-color: #24272b;">
+  <img src="images/hamza.jpg">
+</div>
+  <div class="comment">
+    <a style="color: white;">Mohamed</a>
+    <p>Congratulations</p>
+  </div>
+</div>
+<div style="background-color: #24272b; padding: 0; margin: 0; padding-left: 55px;">
+  <a onclick="turn()" id="comment-like" style="color: gray; font-size: 10px; padding: 0; margin: 0; transition: 0.2s ease; cursor: pointer;">like</a>
+  <a style="color: gray; font-size: 10px; padding: 0; margin: 0;">reply</a>
+  <a style="color: gray; font-size: 10px; padding: 0; margin: 0;">5 hours ago</a>
+</div>
+<div style="background-color: #24272b; display: flex; padding-top: 10px;">
+  <div style="background-color: #24272b;">
+  <img src="images/hamza.jpg" style="  width: 20px; border-radius: 10px; margin-left: 20px;">
+</div>
+  <form style="background-color: #24272b;"><input id="input" type="text" placeholder="Write a comment ..."></form>
+</div>
+</summary>
+
+  <article data-aos="fade-left" data-duration="3000">
+    <div class="spons">
+    <p>Sponsored</p>
+    </div>
+    <div class="right-side">
+      <div class="right-top">
+        <img src= "images/noon.jpg">
+            <div style="display: flex; flex-direction: column;">
+              <div>
+            <p>noon Egypt</p>
+          </div>
+            <p style="color: gray; font-size: 10px;">noon.com</p>
+          </div>
+      </div>
+      <div class="right-top">
+        <img src= "images/software.jpeg">
+            <div style="display: flex; flex-direction: column;">
+              <div>
+            <p>Software engineer</p>
+          </div>
+            <p style="color: gray; font-size: 10px;">software.com</p>
+          </div>
+      </div>
+    </div>
+    <hr style="margin: 0; border-color: gray; width: 90%; margin: auto;">
+    <div class="right-bottom">
+      <div class="right-icons">
+        <p>Contacts</p>
+        <div>
+          <a><i class="fa-solid fa-video"></i></a>
+          <a><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a><i class="fa-solid fa-ellipsis"></i></a>
+        </div>
+      </div>
+
+      <div class="profile">
+        <img src="images/hamza.jpg" class="me">
+        <a href="#">Hamza Sadek</a>
+      </div>
+      <div class="profile">
+        <img src="images/hamza.jpg" class="me">
+        <a href="#">Friends</a>
+      </div>
+      <div class="profile">
+        <img src="images/hamza.jpg" class="me">
+        <a href="#">Most Recent</a>
+      </div>
+      <div class="profile">
+        <img src="images/hamza.jpg" class="me">
+        <a href="#">Groups</a>
+      </div>
+      <div class="profile">
+        <img src="images/hamza.jpg" class="me">
+        <a href="#">Market Place</a>
+      </div>
+      <div class="profile">
+        <img src="images/hamza.jpg" class="me">
+        <a href="#">Watch</a>
+      </div>
+    </div>
+  </article>
+    
+
+    
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="jquery.slim.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="home.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

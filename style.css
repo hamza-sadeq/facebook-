@@ -1,0 +1,157 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f0f2f5;
+}
+
+.facebook-logo img{
+  width: 250px;
+}
+
+section{
+  display: flex;
+  justify-content: space-around;
+}
+
+.facebook-logo p{
+  font-size: 21px;
+  width: 400px;
+  padding-left: 25px;
+  line-height: 23px;
+  font-weight: 500;
+}
+
+.facebook-logo{
+  position: relative;
+  top: 8.5rem;
+  left: 3rem;
+}
+
+form{
+  background-color: white;
+  width: 310px;
+  height: 300px;
+  position: relative;
+  top: 6.7rem;
+  right: 4.5rem;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(194,194,194,1);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(194,194,194,1);
+  box-shadow: 0px 0px 7px 0px rgba(194,194,194,1);
+  text-align: center;
+}
+
+form input{
+  margin-top: 11px;
+  background-color: white;
+  color: #777;
+  font-size: 14px;
+  width: 280px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 0 0 1px lightgray;
+}
+
+form input:focus{
+  outline: 1px solid blue;
+  box-shadow: 0 0 3px rgb(100, 100, 255);
+}
+
+#Login{
+  padding: 7px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  transition: 0.2s ease;
+}
+
+#Login:hover{
+  background-color: #1368d6;
+}
+
+.forgot{
+  font-size: 11px;
+  color: #1368d6;
+  margin-bottom: 10px;
+}
+
+.forgot:hover{
+  color: #1368d6;
+}
+
+form hr{
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.create{
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background-color: #42b72a;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.create:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.page{
+  font-size: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  top: 2.5rem;
+}
+
+.page strong:hover{
+  text-decoration: underline;
+}
+
+#error{
+  background-color: white; 
+  color: red;
+  transition: 0.3s ease;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-size: 13px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 986px){
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .facebook-logo{
+    top: 1rem;
+    left: 0;
+  }
+  .facebook-logo p{
+    text-align: center;
+    width: 350px;
+    padding: 0;
+    margin: 0;
+  }
+  .facebook-logo img{
+    position: relative;
+    left: 3rem;
+  }
+  form{
+    top: 3rem;
+    right: 0;
+  }
+  .page{
+    padding-bottom: 20px;
+  }
+}
